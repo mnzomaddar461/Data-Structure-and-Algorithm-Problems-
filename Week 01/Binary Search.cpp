@@ -9,7 +9,7 @@ int main(){
     for(int i = 0; i < num_of_arr_size; i++){
         cin >> array[i];
     }
-
+    //if array unsorted then used "sort(array, array+num_of_arr_size)"
     int left = 0, right = num_of_arr_size - 1;
     int search_element;
     int flag = 0;
