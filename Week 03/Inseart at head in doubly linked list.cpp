@@ -13,8 +13,13 @@ class Node{
     }
 };
 
-void inseart_at_head(Node* &head, int value){
+void inseart_at_head(Node* &head, Node* &tail, int value){
     Node* newnode = new Node(value);
+    if(head == NULL){
+        head = newnode;
+        tail = newnode;
+        return;
+    }
     newnode->next = head;
     head->prev = newnode;
     head = newnode;
@@ -43,7 +48,7 @@ int main(){
     tail->prev = node2;
 
     print_forward(head);
-    inseart_at_head(head,100);
+    inseart_at_head(head,tail,100);
     print_forward(head);
     return 0;
 }
