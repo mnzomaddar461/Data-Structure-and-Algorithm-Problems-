@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+//- Asked in [Facebook, Amazon, Microsoft, Apple, Google, Snapchat, Adobe, Twitter, Intel]
 class Node{
 public:
     int value;
@@ -12,7 +12,7 @@ public:
     }
 };
 
-// Insert at tail
+
 void insert(Node* &head, Node* &tail, int value){
     Node* newnode = new Node(value);
     if(head == NULL){
@@ -24,7 +24,6 @@ void insert(Node* &head, Node* &tail, int value){
     tail = newnode;
 }
 
-// Recursive reverse
 Node* reverseList(Node* head){
     if(head == NULL || head->next == NULL)
         return head;
@@ -35,12 +34,12 @@ Node* reverseList(Node* head){
     return newHead;
 }
 
-// Palindrome check
+
 bool isPalindrome(Node* head){
     if(head == NULL || head->next == NULL)
         return true;
 
-    // Copy linked list
+
     Node* newHead = NULL;
     Node* newTail = NULL;
 
@@ -50,10 +49,10 @@ bool isPalindrome(Node* head){
         temp = temp->next;
     }
 
-    // Reverse copied list
+
     newHead = reverseList(newHead);
 
-    // Compare original & reversed copy
+
     temp = head;
     Node* temp2 = newHead;
 
@@ -66,7 +65,7 @@ bool isPalindrome(Node* head){
     return true;
 }
 
-// Optional testing
+
 int main(){
     Node* head = NULL;
     Node* tail = NULL;
