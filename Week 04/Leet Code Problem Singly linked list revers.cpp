@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+//- Asked in [Facebook, Amazon, Microsoft, Apple, Google, Uber, Nvidia, Adobe, Twitter, Snapchat, Paypal]
 using namespace std;
 class Node{
     public:
