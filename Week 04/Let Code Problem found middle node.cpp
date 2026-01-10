@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+// Asked in [Amazon, Apple]
 using namespace std;
 class Node{
     public:
