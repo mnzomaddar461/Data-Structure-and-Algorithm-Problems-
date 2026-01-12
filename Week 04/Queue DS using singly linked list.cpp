@@ -40,7 +40,7 @@ class myQueue{
             }
         }
 
-        int font(){            // O(1) and Top
+        int front(){            // O(1) and Top
             return head->value;
         }
 
@@ -74,11 +74,11 @@ int main(){
         qe.push(value);
     }
 
-    cout << "Current Font & Back: " << qe.font() << " & " << qe.back() << endl;
+    cout << "Current Font & Back: " << qe.front() << " & " << qe.back() << endl;
 
     cout << "Original Queue: " << endl;
     while(!qe.empty()){
-        cout << qe.font() << endl;
+        cout << qe.front() << endl;
         qe.pop();
     }
     return 0;

@@ -13,7 +13,7 @@ class myQueue{
             li.pop_front();
         }
 
-        int font(){
+        int front(){
             return li.front();
         }
 
@@ -39,10 +39,10 @@ int main(){
         qe.push(x);
     }
 
-    cout << "Current Font, Back & Size: " << qe.font() << " , " << qe.back() << " & " << qe.size() << endl;
+    cout << "Current Font, Back & Size: " << qe.front() << " , " << qe.back() << " & " << qe.size() << endl;
 
     while(!qe.empty()){
-        cout << qe.font() << endl;
+        cout << qe.front() << endl;
         qe.pop();
     }
     return 0;
