@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+/*- Asked in [Google, Amazon, Apple, Facebook, Microsoft, Adobe, Samsung, IBM, Intel, Uber, Linkedin] */
 using namespace std;
 class ValidParentheses{
     public:
